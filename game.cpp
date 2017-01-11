@@ -1,6 +1,7 @@
 #include "game.h"
 #include <QGraphicsPixmapItem>
 #include <QDebug>
+#include <QFont>
 #include "textitem.h"
 
 
