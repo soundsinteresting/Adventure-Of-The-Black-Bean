@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/pictures">
+        <file>resoureces/pictures/block 1st floor middle.png</file>
+        <file>resoureces/pictures/block 1st floor with stone middle.png</file>
+        <file>resoureces/pictures/bb walk mouthopen state1.png</file>
+        <file>resoureces/pictures/bb walk mouthopen state2.png</file>
+        <file>resoureces/pictures/bb walk mouthopen state3.png</file>
+        <file>resoureces/pictures/bb walk mouthshut state1.png</file>
+        <file>resoureces/pictures/bb walk mouthshut state2.png</file>
+        <file>resoureces/pictures/bb walk mouthshut state3.png</file>
+        <file>resoureces/pictures/4buttonboard.png</file>
+        <file>resoureces/pictures/decoration candyhouse.png</file>
+        <file>resoureces/pictures/decoration circushouse.png</file>
+        <file>resoureces/pictures/decoration fruithouse.png</file>
+        <file>resoureces/pictures/decoration pavillion.png</file>
+    </qresource>
+</RCC>
