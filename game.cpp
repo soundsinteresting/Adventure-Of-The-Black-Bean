@@ -57,6 +57,7 @@ void Game::displaymainmeneu()
 
         TextItem *text1= new TextItem(QString("START"),board);
         text1->setPos(150/2-text1->boundingRect().width()/2,20);
+        connect(text1,SIGNAL(clicked()),this,SLOT(vedeo1()));
 
 
         TextItem *text2= new TextItem(QString("LOAD GAMES"),board);
