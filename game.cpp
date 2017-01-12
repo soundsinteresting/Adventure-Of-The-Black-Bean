@@ -45,8 +45,9 @@ void Game::displaymainmeneu()
         scene->addItem(titletext);
 
      //create the walking bean
-        Player *bean= new Player();
+        bean= new Player();
         scene->addItem(bean);
+
         bean->moveautomatically();
 
      //create the buttons
@@ -57,7 +58,7 @@ void Game::displaymainmeneu()
 
         TextItem *text1= new TextItem(QString("START"),board);
         text1->setPos(150/2-text1->boundingRect().width()/2,20);
-        connect(text1,SIGNAL(clicked()),this,SLOT(vedeo1()));
+        connect(text1,SIGNAL(clicked()),this,SLOT(conversation1()));
 
 
         TextItem *text2= new TextItem(QString("LOAD GAMES"),board);
@@ -76,6 +77,31 @@ void Game::displaymainmeneu()
 
 
         scene->addItem(board);
+
+
+}
+
+void Game::conversation1()
+{
+    //qDebug("function conversation1 is deployed");
+    scene->clear();
+    QGraphicsPixmapItem *block[32];
+    for(int i=0;i<32;i++){
+        block[i]= new QGraphicsPixmapItem();
+        block[i]->setPixmap(QPixmap(":/pictures/resoureces/pictures/block brick 2nd floor middle.png"));
+        block[i]->setPos(25*i,570);
+        scene->addItem(block[i]);
+    }
+    bean= new Player();
+    scene->addItem(bean);
+    bean->setPixmap(QPixmap::fromImage(bean->walkpix[0]));
+    bean->setPos(100,570-120);
+    bean->setFlag(QGraphicsItem::ItemIsFocusable);
+    bean->setFocus();
+
+
+
+
 
 
 }
